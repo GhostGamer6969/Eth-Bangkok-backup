@@ -58,6 +58,11 @@ export default function RootLayout({
                                             Home
                                         </Button>
                                     </a>
+                                    <a href="http://localhost:3000/">
+                                        <Button variant="outlined" color="neutral" style={{ color: "#ffffff" }}>
+                                            CCTP
+                                        </Button>
+                                    </a>
                                     <a href="/signin">
                                         <Button variant="outlined" color="primary" style={{ color: "#ffffff" }}>
                                             Login

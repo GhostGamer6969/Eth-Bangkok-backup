@@ -40,9 +40,9 @@ export default function HomePage() {
                             Get Started
                         </Button>
                     </a>
-                    <a href="/learn-more">
+                    <a href="/signin">
                         <Button variant="outlined" color="neutral" style={{ color: "#ffffff" }}>
-                            Learn More
+                            Log in
                         </Button>
                     </a>
                 </div>
