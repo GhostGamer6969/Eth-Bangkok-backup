@@ -1,0 +1,7 @@
+# Located here https://console.circle.com/api-keys
+API_KEY="TEST_API_KEY:4a22884b6241a3cfdf90d63fc2870124:c112a267ddbf2128dc97311e41f8d4dd"
+
+PORT=8080
+
+# database filename for sqlite
+DATABASE_FILENAME=test.db

@@ -1,0 +1,10 @@
+# Located here https://console.circle.com/wallets/user/configurator
+NEXT_PUBLIC_APP_ID="310b7893-9bf0-55a2-bc1f-04f931ffa69d"
+# hosted backend url
+NEXT_PUBLIC_BASE_URL="http://localhost:8080"
+
+# canonical hosted url
+NEXTAUTH_URL="http://localhost:3000"
+
+NODE_ENV=development
+NEXTAUTH_SECRET=$(openssl
