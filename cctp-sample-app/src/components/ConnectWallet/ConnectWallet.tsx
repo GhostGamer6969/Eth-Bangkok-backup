@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 
 import { Button, Fade, Menu, MenuItem } from '@mui/material'
 import { useWeb3React } from '@web3-react/core'
+import logo from 'assets/logo.svg'
 
 import ConnectWalletDialog from 'components/ConnectWallet/ConnectWalletDialog'
 import { useEagerConnect } from 'hooks/useEagerConnect'
@@ -53,23 +54,16 @@ const ConnectWallet = () => {
   return (
     <>
       {account && active ? (
-        <Button
-          id="connected-wallet-button"
-          aria-controls={open ? 'connected-wallet-menu' : undefined}
-          aria-haspopup="true"
-          aria-expanded={open ? 'true' : undefined}
-          onClick={handleMenuClick}
-        >
-          {getAddressAbbreviation(account)}
-        </Button>
+        <img className="inline h-12" src={logo} alt="logo" />
       ) : (
         <div className="relative inline">
-          <Button onClick={openConnectWalletDialog}>Connect Wallet</Button>
+          <img className="inline h-12" src={logo} alt="logo" onClick={openConnectWalletDialog} />
           {error != null && (
             <span className="absolute left-0 top-10 text-sm text-redhot-500">
               {error?.message}
             </span>
           )}
+
         </div>
       )}
       <Menu

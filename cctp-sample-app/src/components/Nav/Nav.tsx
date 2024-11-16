@@ -34,9 +34,9 @@ function Nav() {
   return (
     <nav className="flex w-full flex-row items-center p-6">
       <Link className="flex flex-row items-center" to="/">
-        <img className="inline h-12" src={logo} alt="logo" />
+        <ConnectWallet />
         <span className="ml-4 text-2xl font-semibold text-white">
-          Cross-Chain Transfer Protocol
+          CeleriZ: CCTP
         </span>
       </Link>
 
@@ -46,8 +46,6 @@ function Nav() {
           .map((route) => (
             <NavLink key={route.path} route={route} />
           ))}
-
-        <ConnectWallet />
       </div>
     </nav>
   )

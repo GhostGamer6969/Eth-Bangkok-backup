@@ -161,12 +161,18 @@ const SendConfirmationDialog: React.FC<Props> = ({
         <TransactionDetails transaction={formInputs} />
 
         <NetworkAlert className="mt-8" chain={formInputs.source} />
+        <input
+          className="mt-8 w-full rounded border border-licorice-500 bg-licorice-800 p-4 text-base font-bold text-licorice-100"
+          type="password"
+          placeholder="PIN"
+        />
       </DialogContent>
 
       <DialogActions className="mt-8">
         <Button size="large" color="secondary" onClick={handleClose}>
           BACK
         </Button>
+
         {!isAllowanceSufficient ? (
           <LoadingButton
             size="large"
